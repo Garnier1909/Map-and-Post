@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/range.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>ユーザーデータ登録</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div style="display:flex; justify-content:space-between; align-items: center;">
+          <h1 style="color: #ffffff;">MAP & POSTS</h1>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- Main[Start] -->
+  <main>
+    <!-- <article> -->
+      <div class="jumbotron" style="border-radius:10px; margin: auto 10px; padding:10px 10px 20px 10px;">
+      <form method="post" action="users_insert.php">
+        <h2  style="font-weight: bold; margin-bottom:30px;">ユーザー登録</h2>
+        <fieldset>
+          <table>
+            <tr>
+              <th>名前 : </th>
+              <td><input type="text" name="name"></td>
+            </tr>
+
+            <tr>
+              <th>ログインID : </th>
+              <td><input type="text" name="lid"></td>
+            </tr>
+
+            <tr>
+              <th>メールアドレス : </th>
+              <td><input type="text" name="mail"></td>
+            </tr>
+
+            <tr>
+              <th>パスワード : </th>
+              <td><input type="text" name="lpw"></td>
+            </tr>
+
+            <tr>
+              <th>性別 :</th>
+              <td>
+                男性<input type="radio" name="gender" value="0">
+                女性<input type="radio" name="gender" value="1">
+              </td>
+            </tr>
+
+            <tr>
+              <th>役職 : </th>
+              <td><input type="text" name="depart"></td>
+            </tr>
+
+            <tr>
+              <th>利用規模 :</th>
+              <td>
+                個人<input type="radio" name="sort" value="0">
+                法人<input type="radio" name="sort" value="1">
+              </td>
+            </tr>
+
+            <tr>
+              <th>ピンの色（変更不可） :</th>
+              <td>
+                <input type="color" name="col">
+              </td>
+            </tr>
+
+          </table>
+
+          <input type="submit" class="button" value="送信" style="margin-top:10px;">
+
+        </fieldset>
+      </form>
+    <!-- </article> -->
+      </div>
+  </main>
+  <!-- Main[End] -->
+
+
+</body>
+
+</html>
